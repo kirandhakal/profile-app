@@ -1,0 +1,48 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    title: "Profile App",
+    home: Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          'welcome to my app',
+          style: TextStyle(
+              fontSize: 20,
+              color: Color.fromARGB(255, 212, 194, 194),
+              fontWeight: FontWeight.bold),
+        ),
+      ),
+      body: Column(
+        children: [
+          SizedBox(height: 10),
+          Center(
+              child: Image.network(
+            "https://dhakalkiran.com.np/kiran1.png",
+            height: 250,
+            width: 250,
+          )),
+          SizedBox(height: 10),
+          Text(
+            'Name : kiran dhakal',
+            style: TextStyle(
+                fontSize: 24, color: Colors.black, fontWeight: FontWeight.bold),
+          ),
+          SizedBox(height: 1),
+          Text(" Address:kawasoti nepal"),
+          SizedBox(height: 4),
+          Text('EMAIL: kirandhakal715@gmail.com'),
+          SizedBox(height: 4),
+          Text('instagram:kirandhakal77'),
+          SizedBox(height: 14),
+          Text(
+            'developed by kiran dhakal',
+            style: TextStyle(fontSize: 12, color: Colors.green),
+          )
+        ],
+      ),
+    ),
+  ));
+}
